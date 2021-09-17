@@ -75,7 +75,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+ IngredientsModels/Services
+    <Compile Include="IngredientService.cs" />
+
     <Compile Include="FoodServices.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeServices.cs" />
   </ItemGroup>
