@@ -72,11 +72,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IngredientService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recipe.Data\Recipe.Data.csproj">
+      <Project>{B56F916E-0512-46FA-AF79-CA8205F68836}</Project>
+      <Name>Recipe.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recipe.Models\Recipe.Models.csproj">
+      <Project>{377F4848-8AD9-4A18-A33E-07CB6F6403A6}</Project>
+      <Name>Recipe.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
