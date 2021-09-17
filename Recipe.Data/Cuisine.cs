@@ -9,6 +9,7 @@ namespace Recipe.Data
 {
     public class Cuisine
     {
+        [Key]
         [Required]
         public int Id { get; set; }
 

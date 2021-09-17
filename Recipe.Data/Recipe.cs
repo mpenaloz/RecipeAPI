@@ -11,19 +11,32 @@ namespace Recipe.Data
     public class Recipes
     {
         [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required]
+        [MinLength(1, ErrorMessage = "Recipe must have a title.")]
+        [MaxLength(100)]
         public string Name { get; set; }
 
-        [Required]
         public int PrepTime { get; set; }
 
-        [Required]
         public int CookTime { get; set; }
 
-        [Required]
         public float ServingSize { get; set; }
+        public int Calories
+        {
+            get
+            {
+                int sum = 0;
+
+                foreach (var ingredient in Ingredients)
+                {
+                    ingredient.Calories += sum;
+                }
+                return sum;
+            }
+        }
 
         public virtual ICollection<Ingredients> Ingredients { get; set; }
 
