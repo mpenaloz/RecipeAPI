@@ -10,15 +10,16 @@ namespace Recipe.Data
     public class Ingredients
     {
         [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }
 
-        [Required]
+
         public int Calories { get; set; }
 
-        [Required]
+
         public int FoodId { get; set; }
 
         public virtual ICollection<Recipes> Recipes { get; set; }
