@@ -72,11 +72,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Create_Cuisine.cs" />
+    <Compile Include="Cuisine_Detail.cs" />
+    <Compile Include="Cuisine_update.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recipe.Data\Recipe.Data.csproj">
+      <Project>{b56f916e-0512-46fa-af79-ca8205f68836}</Project>
+      <Name>Recipe.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
