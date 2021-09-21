@@ -328,14 +328,6 @@
       <Project>{b56f916e-0512-46fa-af79-ca8205f68836}</Project>
       <Name>Recipe.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Recipe.Models\Recipe.Models.csproj">
-      <Project>{377f4848-8ad9-4a18-a33e-07cb6f6403a6}</Project>
-      <Name>Recipe.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Recipe.Services\Recipe.Services.csproj">
-      <Project>{295e4896-5ad1-4f10-8918-1e4296a1e2b5}</Project>
-      <Name>Recipe.Services</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
