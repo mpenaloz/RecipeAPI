@@ -1,16 +1,16 @@
-﻿using System;
+﻿using Recipe.Data;
+using Recipes.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Recipe.Data
+namespace Recipes.Models.RecipeModels
 {
-    public class Recipes
+    public class RecipeCreate
     {
-        [Key]
         [Required]
         public int Id { get; set; }
 
@@ -24,27 +24,9 @@ namespace Recipe.Data
         public int CookTime { get; set; }
 
         public float ServingSize { get; set; }
-        public int Calories
-        {
-            get
-            {
-                int sum = 0;
-
-                foreach (var ingredient in Ingredients)
-                {
-                    ingredient.Calories += sum;
-                }
-                return sum;
-            }
-        }
 
         public virtual ICollection<Ingredients> Ingredients { get; set; }
 
-        [ForeignKey (nameof(Cuisine))]
-        public int CuisineId { get; set; }
-
-        public virtual Cuisine Cuisine{get;set;}
-
-
+        public Cuisine Cuisine { get; set; }
     }
 }
