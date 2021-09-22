@@ -1,5 +1,5 @@
-﻿using Recipes.Data;
-using Recipes.Models.RecipeModels;
+﻿using Recipe.Data;
+using Recipe.Models.RecipeModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace Recipe.Service
         public bool CreateRecipe(RecipeCreate model)
         {
             var entity =
-                new Recipes
+                new Recipess
                 {
                     CookTime = model.CookTime,
                     Cuisine = model.Cuisine,

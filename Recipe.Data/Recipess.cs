@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Recipes.Data
+namespace Recipe.Data
 {
-    public class Recipes
+    public class Recipess
     {
         [Key]
         [Required]

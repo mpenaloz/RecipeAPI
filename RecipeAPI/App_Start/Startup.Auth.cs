@@ -10,7 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using RecipeAPI.Providers;
 using RecipeAPI.Models;
-using RecipeAPI.Data;
+using Recipe.Data;
 
 namespace RecipeAPI
 {

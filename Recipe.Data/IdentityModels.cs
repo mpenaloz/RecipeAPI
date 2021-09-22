@@ -8,7 +8,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Recipe.Data;
 
-namespace Recipes.Data
+namespace Recipe.Data
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -35,7 +35,7 @@ namespace Recipes.Data
         }
 
         public DbSet<Cuisine> Cuisines { get; set; }
-        public DbSet<Recipes> Recipes { get; set; }
+        public DbSet<Recipess> Recipes { get; set; }
         public DbSet<Food> Foods { get; set; }
         public DbSet<Ingredients> Ingredients {get;set;}
 

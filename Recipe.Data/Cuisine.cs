@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Recipes.Data
+namespace Recipe.Data
 {
     public class Cuisine
     {
@@ -16,7 +16,7 @@ namespace Recipes.Data
         [Required]
         public string Name { get; set; }
 
-        public virtual ICollection<Recipes> Recipes { get; set; }
+        public virtual ICollection<Recipess> Recipes { get; set; }
 
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Recipes.Data
+namespace Recipe.Data
 {
     public class Ingredients
     {
@@ -22,7 +22,7 @@ namespace Recipes.Data
 
         public int FoodId { get; set; }
 
-        public virtual ICollection<Recipes> Recipes { get; set; }
+        public virtual ICollection<Recipess> Recipes { get; set; }
 
     }
 }
