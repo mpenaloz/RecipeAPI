@@ -75,7 +75,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
- IngredientsModels/Services
+
+    <Compile Include="Create_Cuisine.cs" />
+    <Compile Include="Cuisine_Detail.cs" />
+    <Compile Include="Cuisine_update.cs" />
+
+
     <Compile Include="IngredientCreate.cs" />
     <Compile Include="IngredientDisplay.cs" />
     <Compile Include="IngredientEdit.cs" />
@@ -84,6 +89,7 @@
     <Compile Include="FoodModels\FoodDetail.cs" />
     <Compile Include="FoodModels\FoodEdit.cs" />
     <Compile Include="FoodModels\FoodListItem.cs" />
+
 
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeModels\RecipeCreate.cs" />
@@ -96,9 +102,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+
     <ProjectReference Include="..\Recipe.Data\Recipe.Data.csproj">
       <Project>{b56f916e-0512-46fa-af79-ca8205f68836}</Project>
       <Name>Recipe.Data</Name>
