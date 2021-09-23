@@ -146,6 +146,7 @@ namespace RecipeAPI.Controllers
             return Ok(recipes);
         }
 
+        [HttpGet]
         public IHttpActionResult GetRecipesByMinimumServingSize(int min)
         {
             var service = CreateRecipeService();
