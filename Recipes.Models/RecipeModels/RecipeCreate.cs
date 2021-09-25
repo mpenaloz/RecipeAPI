@@ -26,7 +26,7 @@ namespace Recipe.Models.RecipeModels
         public float ServingSize { get; set; }
 
         public virtual ICollection<Ingredients> Ingredients { get; set; }
-
-        public Cuisine Cuisine { get; set; }
+        [Required]
+        public int CuisineId { get; set; }
     }
 }

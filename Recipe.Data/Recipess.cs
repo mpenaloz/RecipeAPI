@@ -40,9 +40,8 @@ namespace Recipe.Data
 
         public virtual ICollection<Ingredients> Ingredients { get; set; }
 
-        [ForeignKey (nameof(Cuisine))]
+        [ForeignKey(nameof(Cuisine))]
         public int CuisineId { get; set; }
-
         public virtual Cuisine Cuisine{get;set;}
 
 
