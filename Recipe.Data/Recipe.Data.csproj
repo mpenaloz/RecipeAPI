@@ -91,12 +91,29 @@
     <Compile Include="Food.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Ingredients.cs" />
+    <Compile Include="Migrations\202109251314209_InitialMigration.cs" />
+    <Compile Include="Migrations\202109251314209_InitialMigration.designer.cs">
+      <DependentUpon>202109251314209_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109251336035_new.cs" />
+    <Compile Include="Migrations\202109251336035_new.designer.cs">
+      <DependentUpon>202109251336035_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recipess.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109251314209_InitialMigration.resx">
+      <DependentUpon>202109251314209_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109251336035_new.resx">
+      <DependentUpon>202109251336035_new.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

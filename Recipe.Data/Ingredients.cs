@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +20,10 @@ namespace Recipe.Data
 
         public int Calories { get; set; }
 
-
+        [ForeignKey(nameof(Food))]
         public int FoodId { get; set; }
 
-        public virtual ICollection<Recipess> Recipes { get; set; }
+        public virtual ICollection<Food> Food { get; set; }
 
     }
 }

@@ -16,9 +16,8 @@ namespace Recipe.Service
                 new Recipess
                 {
                     CookTime = model.CookTime,
-                    Cuisine = model.Cuisine,
+                    CuisineId = model.CuisineId,
                     PrepTime = model.PrepTime,
-                    CuisineId = model.PrepTime,
                     Id = model.Id,
                     Ingredients = model.Ingredients,
                     Name = model.Name,
